@@ -1,0 +1,397 @@
+/* Start Global Values*/
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+ img {
+    max-width: 300px !important;
+    max-height: 200px !important;
+    height: auto;
+    object-fit: cover;
+}
+/* end Global Values */
+/* Start Variables */
+:root{
+    --main-background-color: linear-gradient(171.18deg, #0F223C 10.6%, #101925 88.52%);
+    --background-image: url(../Images/pattern.png);
+    --primary-color: #101925;
+    --primary-2-color: #0f223c;
+    --main-font-color: #58B3C8;
+    --secondary-text-color: #E6E6E7;
+    --radia-gradient: radial-gradient(310.49% 310.49% at 308.16% 126.24%, #58B3C8 0%, #101925 100%);
+
+}
+/* End Variables */
+/* Start Component */
+    .background-color{
+        background: var(--main-background-color);
+        background-size: cover;
+        background-position: center;
+    }
+    .background-image{
+        background-image: var(--background-image);
+        background-size: cover;
+        background-position: center;
+        opacity: 0.1;
+        position: absolute;
+        z-index: 1;
+    }
+/* End Component */
+body{
+    font-family: "Poppins", sans-serif;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+}
+/* Start Header */
+.navbar .navbar-toggler{ 
+    color: var(--main-font-color);
+    font-size: 30px;
+}
+.navbar .container-fluid .navbar-brand img{
+    max-width: 195px ;
+}
+.navbar-nav .nav-link{
+    color: var(--secondary-text-color);
+    transition: 0.3s;
+    height: 55px;
+}
+.navbar-nav .nav-link:hover{
+    color: var(--main-font-color);
+    border-bottom: 1px solid var(--main-font-color);
+}
+button.btn.btn-primary{
+    background-color: var(--main-font-color);
+    border: none;
+}
+.navbar .Eng{
+    color: var(--secondary-text-color);
+}
+/*End Header*/
+/*Start Landing*/
+.landing{
+    width: 100%;
+    min-height: calc(100vh - 70px);
+    margin-top: -0.9px;
+}
+.landing .img{
+    width: 100%;
+    min-height: calc(100vh - 70px);
+}
+.landing .container{
+    width: 100%;
+    min-height: calc(100vh - 70px);
+}
+.landing .container .text-center{
+    flex-basis: 50%;
+}
+.landing .cube{
+    flex-basis: 40%;
+    position: relative;
+    z-index: 1;
+}
+.landing .cube img{
+    max-width: 100%;
+    min-height: 100%;
+}
+/*End Landing*/
+/* Start Section-2 */
+.section-2{
+    background-color: var(--primary-color);
+}
+.section-2 .content .text{
+    flex-basis: 27%;
+    letter-spacing: 1px;
+}
+.section-2 .content .text h3{
+    color: var(--main-font-color);
+    font-weight: 700;
+    font-size: 40px;
+}
+.section-2 .content .text p{
+    color: var(--secondary-text-color);
+    font-size: 18px;
+}
+.section-2 .content .text p span{
+    font-weight: bold;
+}
+.section-2 .content .text-1{
+    flex-basis: 40%;
+    color: var(--secondary-text-color);
+    letter-spacing: 1px;
+}
+/* End Section-2 */
+/* Start section-3 */
+.section-3{
+    width: 100%;
+    min-height: 100vh;
+}
+.section-3 .container-fluid{
+    min-height: calc(100vh + 300px);
+}
+.section-3 .srv{
+    width: 100%;
+    min-height: calc(100vh + 300px);
+}
+.section-3 .container-fluid .img{
+    max-width: 100%;
+    position: relative;
+}
+.section-3 .container-fluid .img::before{
+    content: "";
+    position: absolute;
+    height: calc(100% + 200px);
+    border: 2px solid var(--main-font-color);
+    top: -50%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% + 68px);
+    border-radius: 41px;
+}
+.section-3 .container-fluid .img img{
+    max-width: 326px;
+}
+.section-3 .container-fluid .text {
+    flex-basis: 45%;
+}
+.section-3 .container-fluid .text h2{
+    color: var(--main-font-color);
+    font-weight: 700;
+    font-size: 40px;
+}
+.section-3 .container-fluid .text h4{
+    color: var(--secondary-text-color);
+    font-weight: 600;
+    font-size: 18px;
+}
+.section-3 .container-fluid .text ul{
+    color: var(--secondary-text-color);
+    margin-bottom: 5px;
+}
+.section-3 .container-fluid .text .but{
+    width: 100%;
+}
+.section-3 .container-fluid .text .but button{
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--secondary-text-color);
+    background: none;
+}
+.section-3 .container-fluid .text .but i{
+    display: flex;
+    color: white !important;
+    position: relative;
+    z-index: 2;
+}
+
+@media (max-width: 767px){
+    .section-3 .container-fluid .img::before{
+        max-width: 70%;
+    }
+}
+@media (max-width: 991px) {
+    .section-3 .container-fluid .img::before{
+        max-width: 60%;
+    }
+    .section-3 .container-fluid .img img{
+        max-width: 265px;
+    }
+}
+@media (min-width: 375px) and (max-width: 546px) {
+    .section-3 .container-fluid .img img{
+        max-width: 185px;
+    }
+    .section-3 .container-fluid .img::before{
+        max-width: 80%;
+        max-height: 220px;
+    }
+    
+}
+/* End section-3 */
+/* Start Products section */
+.products{
+    min-height: calc(100vh + 200px);
+    background-color: var(--primary-color);
+}
+.products .container-fluid{
+    min-height: calc(100vh + 200px);
+}
+
+.products .container-fluid .content{
+    min-height: 100%;
+}
+.products .container-fluid .content > div{
+    flex-basis: 30%;
+}
+@media (max-width: 767px) {
+    .products .container-fluid .content > div{
+        flex-basis: 100%;
+        margin-bottom: 80px;
+    }
+}
+@media (max-width: 991px) {
+    .products .container-fluid .content > div{
+        flex-basis: 60%;
+        margin-bottom: 60px;
+    }
+    
+}
+.products .container-fluid .content .product-1{
+    background-color: #0E1520;
+}
+.products .container-fluid .content .product-1 img{
+    max-width: 100%;
+}
+.products .container-fluid .content .product-1 h2{
+    font-size: 18px;
+    font-weight: bold;
+}
+.products .container-fluid .content .product-1 p{
+    color: white;
+}
+.products .container-fluid .content .product-1 .but{
+    background-color: var(--main-font-color);
+}
+.products .container-fluid .content .product-1 .but button{
+    background: none;
+    border: none;
+    letter-spacing: 2px;
+    color: var(--primary-color);
+    font-weight: 700;
+}
+.products .container-fluid .text h3{
+    color: var(--main-font-color);
+}
+/* End Products section */
+/* Start Services Section*/
+.pack{
+    min-height: 100vh;
+}
+.pack .serv {
+    min-height: 100vh;
+    width: 100%;
+}
+.pack .container-fluid{
+    width: 100%;
+    min-height: 100vh;
+    background: var(--radia-gradient);
+}
+.pack .container-fluid .ft{
+    min-height: 100vh;
+}
+.pack .container-fluid .ft h2{
+    color: var(--main-font-color);
+    font-weight: 900;
+    font-size: 26px;
+}
+.pack .container-fluid .ft p{
+    color: var(--secondary-text-color);
+    font-size: 36px;
+}
+.pack .container-fluid .text-11{
+    color: var(--secondary-text-color);
+    flex-basis: 40%;
+    padding: 20px;
+}
+.pack .container-fluid .text-11 h3{
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.pack .container-fluid .text-11 ul{
+    display: inline;
+    float: left;
+    padding: 30px;
+}
+.pack .container-fluid .text-11 ul li{
+    margin-bottom: 7px;
+}
+/* End Services Section */
+/* Start Visi Section*/
+.visi{
+    min-height: 100vh;
+}
+.visi .container-fluid{
+    min-height: 100vh;
+    background-color: var(--primary-color);
+}
+.visi .container-fluid .text{
+    min-height: 100vh;
+    padding: 60px;
+}
+.visi .container-fluid .text h3{
+    color: var(--main-font-color);
+    font-size: 40px;
+    font-weight: 700;
+}
+.visi .container-fluid .text p{
+    color: var(--secondary-text-color);
+    font-size: 18px;
+    text-align: center;
+    max-width: 50%;
+}
+@media (max-width: 560px) {
+    .visi .container-fluid .text p{
+        max-width: 100%;
+    }
+}
+/* End Visi Section*/
+/* Start foc Section */
+.pack{
+    min-height: 100vh;
+}
+.pack .serv {
+    min-height: 100vh;
+    width: 100%;
+}
+.pack .container-fluid{
+    width: 100%;
+    min-height: 100vh;
+    background: var(--radia-gradient);
+}
+.pack .container-fluid .fts{
+    min-height: 100vh;
+    padding: 60px;
+}
+.pack .container-fluid .ft h2{
+    color: var(--main-font-color);
+    font-weight: 900;
+}
+.pack .container-fluid .fts p{
+    color: var(--secondary-text-color);
+}
+.pack .container-fluid .ouvc-img{
+    max-width: 100%;
+}
+/*  foc Section */
+/* Start touch Section*/
+.touch{
+    min-height: calc(100vh - 300px);
+}
+.touch .touch-b{
+    min-width: 100%;
+    min-height: calc(100vh - 300px);
+    background-position: bottom;
+}
+.touch .container-fluid{
+    min-height: calc(100vh - 300px);
+}
+.touch .container-fluid h3{
+    color: var(--secondary-text-color);
+    max-width: 50%;
+}
+@media (max-width: 560px) {
+    .touch .container-fluid h3{
+        max-width: 100%;
+    }
+}
+.touch .container-fluid .but{
+    max-width: 70%;
+}
+.touch .container-fluid .but button{
+    border: none;
+    background-color: var(--main-font-color);
+}
+/* End touch Section*/
