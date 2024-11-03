@@ -1,0 +1,74 @@
+/* Start Global Values*/
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+ img {
+    max-width: 300px;
+    max-height: 200px;
+    height: auto;
+
+}
+/* end Global Values */
+/* Start Variables */
+:root{
+    --main-background-color: linear-gradient(171.18deg, #0F223C 10.6%, #101925 88.52%);
+    --background-image: url(../Images/pattern.png);
+    --primary-color: #101925;
+    --primary-2-color: #0f223c;
+    --main-font-color: #58B3C8;
+    --secondary-text-color: #E6E6E7;
+    --radia-gradient: radial-gradient(310.49% 310.49% at 308.16% 126.24%, #58B3C8 0%, #101925 100%);
+
+}
+/* End Variables */
+/* Start Component */
+    .background-color{
+        background: var(--main-background-color);
+        background-size: cover;
+        background-position: center;
+    }
+    .background-image{
+        background-image: var(--background-image);
+        background-size: cover;
+        background-position: center;
+        opacity: 0.1;
+        position: absolute;
+        z-index: 1;
+    }
+/* End Component */
+body{
+    font-family: "Poppins", sans-serif;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+}
+/*Start Register page*/
+.navbar .navbar-toggler{ 
+    color: var(--main-font-color);
+    font-size: 30px;
+}
+.navbar .container-fluid .navbar-brand img{
+    max-width: 195px ;
+}
+.navbar-nav .nav-link{
+    color: var(--secondary-text-color);
+    transition: 0.3s;
+    height: 55px;
+}
+.navbar-nav .nav-link:hover{
+    color: var(--main-font-color);
+    border-bottom: 1px solid var(--main-font-color);
+}
+button.btn.btn-primary{
+    background-color: var(--main-font-color);
+    border: none;
+}
+.navbar .Eng{
+    color: var(--secondary-text-color);
+}
+.form{
+    min-height: calc(100vh - 71px);
+}
+/*End Register page*/

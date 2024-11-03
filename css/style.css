@@ -5,10 +5,10 @@
     box-sizing: border-box;
 }
  img {
-    max-width: 300px !important;
-    max-height: 200px !important;
+    max-width: 300px;
+    max-height: 200px;
     height: auto;
-    object-fit: cover;
+
 }
 /* end Global Values */
 /* Start Variables */
@@ -365,7 +365,33 @@ button.btn.btn-primary{
 .pack .container-fluid .ouvc-img{
     max-width: 100%;
 }
-/*  foc Section */
+/*  End foc Section */
+/* Start some of our clients section */
+.clients{
+    min-height: calc(100vh - 350px);
+    padding: 80px;
+}
+.clients .container-fluid{
+    min-height: calc(100vh - 350px);
+}
+.clients .container-fluid .text{
+    color: var(--secondary-text-color);
+}
+.clients .container-fluid .collab{
+    min-height: 100%;
+    width: 100%;
+}
+.clients .container-fluid .collab img{
+    max-width: 10%;
+}
+.carousel-item img{
+    max-width: 15%;
+    min-height: 10%;
+}
+.carousel-item{
+    height: 30%;
+}
+/* End some of our clients section */
 /* Start touch Section*/
 .touch{
     min-height: calc(100vh - 300px);
@@ -395,3 +421,55 @@ button.btn.btn-primary{
     background-color: var(--main-font-color);
 }
 /* End touch Section*/
+/* Start Footer Section */
+.footer{
+    min-height: 100vh;
+}
+.foot-back{
+    min-height: 100vh;
+    width: 100%;
+}
+.footer .foot-back .container-fluid{
+    min-height: 100%;
+    max-width: 100%;
+}
+.intro{
+    height: 100%;
+    width: 100%;
+    flex-basis: 30%;
+}
+.intro ul {
+    list-style-type: none;
+    min-height: 100vh;
+    font-weight: 700;
+    transition: 0.3s;
+}
+.intro ul li.active{
+    color: var(--main-font-color);
+}
+.mo-map{
+    height: 100%;
+    flex-basis: 30%;
+}
+.contac{
+    flex-basis: 30%;
+}
+.contac p span{
+    font-weight: bold;
+}
+.contac .form label{
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.contac form textarea{
+    position: relative;
+    z-index: 5;
+    border: none;
+}
+.contac button{
+    border: none;
+    background-color: var(--main-font-color);
+    color: var(--secondary-text-color);
+}
+/* End Footer Section */
