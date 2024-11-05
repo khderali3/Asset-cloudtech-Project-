@@ -4,12 +4,6 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
- img {
-    max-width: 300px;
-    max-height: 200px;
-    height: auto;
-
-}
 /* end Global Values */
 /* Start Variables */
 :root{
@@ -26,7 +20,6 @@
 /* Start Component */
     .background-color{
         background: var(--main-background-color);
-        background-size: cover;
         background-position: center;
     }
     .background-image{
@@ -39,9 +32,7 @@
     }
 /* End Component */
 body{
-    font-family: "Poppins", sans-serif;
-    height: 100%;
-    width: 100%;
+    font-family: "Poppins", sans-serif;;
     background-size: cover;
 }
 /* Start Header */
@@ -72,29 +63,56 @@ button.btn.btn-primary{
 /*Start Landing*/
 .landing{
     width: 100%;
-    min-height: calc(100vh - 70px);
+    min-height: 30vh;
     margin-top: -0.9px;
 }
 .landing .img{
     width: 100%;
-    min-height: calc(100vh - 70px);
+    min-height: calc(100vh - 200px);
 }
 .landing .container{
     width: 100%;
-    min-height: calc(100vh - 70px);
+    min-height: calc(100vh - 200px);
 }
 .landing .container .text-center{
     flex-basis: 50%;
 }
 .landing .cube{
-    flex-basis: 40%;
+    flex-basis: 30%;
     position: relative;
     z-index: 1;
 }
 .landing .cube img{
     max-width: 100%;
-    min-height: 100%;
 }
+@media (min-width: 767px) and (max-width: 991px){
+    .landing{
+        min-height: calc(100vh - 800px);
+    }
+    .landing .container{
+        min-height: calc(100vh - 800px);
+    }
+    .landing .img{
+        min-height: calc(100vh - 800px);
+    }
+    .landing .cube{
+        flex-basis: 45%;
+    }
+}
+    @media (max-width: 450px) {
+        .landing .cube{
+            flex-basis: 60%;
+        } 
+        .landing{
+            min-height: calc(100vh - 600px);
+        }
+        .landing .container{
+            min-height: calc(100vh - 350px);
+        }
+        .landing .img{
+            min-height: calc(100vh - 370px);
+        }
+    }
 /*End Landing*/
 /* Start Section-2 */
 .section-2{
@@ -116,23 +134,25 @@ button.btn.btn-primary{
 .section-2 .content .text p span{
     font-weight: bold;
 }
-.section-2 .content .text-1{
-    flex-basis: 40%;
-    color: var(--secondary-text-color);
-    letter-spacing: 1px;
-}
 /* End Section-2 */
 /* Start section-3 */
 .section-3{
     width: 100%;
-    min-height: 100vh;
+    min-height: calc(100vh - 400px);
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 .section-3 .container-fluid{
-    min-height: calc(100vh + 300px);
+    min-height: calc(100vh - 400px);
 }
 .section-3 .srv{
     width: 100%;
-    min-height: calc(100vh + 300px);
+    min-height: calc(100vh - 100px);
+}
+@media (min-width: 767px) and (max-width: 991px){
+    .section-3 .srv{
+        min-height: calc(100vh + 200px);
+    }
 }
 .section-3 .container-fluid .img{
     max-width: 100%;
@@ -154,6 +174,11 @@ button.btn.btn-primary{
 }
 .section-3 .container-fluid .text {
     flex-basis: 45%;
+}
+@media (min-width: 767px) and (max-width: 991px){
+    .section-3 .container-fluid .text{
+        margin-top: 200px;
+    } 
 }
 .section-3 .container-fluid .text h2{
     color: var(--main-font-color);
@@ -212,11 +237,13 @@ button.btn.btn-primary{
 /* End section-3 */
 /* Start Products section */
 .products{
-    min-height: calc(100vh + 200px);
+    min-height: calc(100vh + 50px);
     background-color: var(--primary-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 .products .container-fluid{
-    min-height: calc(100vh + 200px);
+    min-height: calc(100vh + 50px);
 }
 
 .products .container-fluid .content{
@@ -267,19 +294,19 @@ button.btn.btn-primary{
 /* End Products section */
 /* Start Services Section*/
 .pack{
-    min-height: 100vh;
+    min-height: calc(100vh - 500px);
 }
 .pack .serv {
-    min-height: 100vh;
+    min-height: calc(100vh - 500px);
     width: 100%;
 }
 .pack .container-fluid{
     width: 100%;
-    min-height: 100vh;
+    min-height: calc(100vh - 500px);
     background: var(--radia-gradient);
 }
 .pack .container-fluid .ft{
-    min-height: 100vh;
+    min-height: calc(100vh - 500px);
 }
 .pack .container-fluid .ft h2{
     color: var(--main-font-color);
@@ -298,12 +325,12 @@ button.btn.btn-primary{
 .pack .container-fluid .text-11 h3{
     font-weight: 600;
     font-size: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 10px;
 }
 .pack .container-fluid .text-11 ul{
     display: inline;
     float: left;
-    padding: 30px;
+    padding: 10px;
 }
 .pack .container-fluid .text-11 ul li{
     margin-bottom: 7px;
@@ -311,14 +338,14 @@ button.btn.btn-primary{
 /* End Services Section */
 /* Start Visi Section*/
 .visi{
-    min-height: 100vh;
+    min-height: calc(100vh - 300px);
 }
 .visi .container-fluid{
-    min-height: 100vh;
+    min-height: calc(100vh - 300px);
     background-color: var(--primary-color);
 }
 .visi .container-fluid .text{
-    min-height: 100vh;
+    min-height: calc(100vh - 300px);
     padding: 60px;
 }
 .visi .container-fluid .text h3{
@@ -340,19 +367,21 @@ button.btn.btn-primary{
 /* End Visi Section*/
 /* Start foc Section */
 .pack{
-    min-height: 100vh;
+    min-height: calc(100vh - 600px);
 }
 .pack .serv {
-    min-height: 100vh;
+    min-height: calc(100vh - 320px);
     width: 100%;
 }
 .pack .container-fluid{
     width: 100%;
-    min-height: 100vh;
+    min-height: calc(100vh - 500px);
     background: var(--radia-gradient);
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 .pack .container-fluid .fts{
-    min-height: 100vh;
+    flex-basis: 40%;
     padding: 60px;
 }
 .pack .container-fluid .ft h2{
@@ -365,14 +394,17 @@ button.btn.btn-primary{
 .pack .container-fluid .ouvc-img{
     max-width: 100%;
 }
+.pack .container-fluid img{
+    max-width: 300px;
+}
 /*  End foc Section */
 /* Start some of our clients section */
 .clients{
-    min-height: calc(100vh - 350px);
+    min-height: calc(100vh - 450px);
     padding: 80px;
 }
 .clients .container-fluid{
-    min-height: calc(100vh - 350px);
+    min-height: calc(100vh - 450px);
 }
 .clients .container-fluid .text{
     color: var(--secondary-text-color);
@@ -390,6 +422,24 @@ button.btn.btn-primary{
 }
 .carousel-item{
     height: 30%;
+}
+@media (min-width: 365px) and (max-width: 992px){
+    .clients{
+        min-height: calc(100vh - 600px);
+        padding: 80px;
+    }
+    .clients .container-fluid{
+        min-height: calc(100vh - 600px);
+    }
+}
+@media (max-width: 350px) {
+    .clients{
+        min-height: calc(100vh - 700px);
+        padding: 80px;
+    }
+    .clients .container-fluid{
+        min-height: calc(100vh - 700px);
+    }
 }
 /* End some of our clients section */
 /* Start touch Section*/
@@ -420,13 +470,28 @@ button.btn.btn-primary{
     border: none;
     background-color: var(--main-font-color);
 }
+@media (min-width: 350px) and (max-width: 991px) {
+    .touch{
+        min-height: calc(100vh - 450px);
+    }
+    .touch .touch-b{
+        min-width: 100%;
+        min-height: calc(100vh - 450px);
+        background-position: bottom;
+    }
+    .touch .container-fluid{
+        min-height: calc(100vh - 450px);
+    }
+}
 /* End touch Section*/
 /* Start Footer Section */
 .footer{
-    min-height: 100vh;
+    min-height: calc(100vh - 400px);
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 .foot-back{
-    min-height: 100vh;
+    min-height: calc(100vh - 300px);
     width: 100%;
 }
 .footer .foot-back .container-fluid{
@@ -440,7 +505,7 @@ button.btn.btn-primary{
 }
 .intro ul {
     list-style-type: none;
-    min-height: 100vh;
+    min-height: 100%;
     font-weight: 700;
     transition: 0.3s;
 }

@@ -25,7 +25,6 @@
             <div class="Eng p-2 d-none d-lg-block">
                 <i class="fa-solid fa-globe"></i>
                 <span>English</span>
-
             </div>
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li class="nav-item">
@@ -43,15 +42,52 @@
                 <li class="nav-item">
                 <a class="nav-link p-lg-3 p-4" href="#">Support</a>
                 </li>
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                 <a class="nav-link p-lg-3 p-4" href="#">Login</a>
-                </li>
+                </li> -->
+
+              <!-- Example split danger button -->
+              <li class="prof nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle mb-0 pb-0 mt-0 pt-0"
+                  href="#"
+                  id="navbarDropdownMenuLink"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <span class="text-muted"> hello, User</span>
+                  <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAJQAswMBIgACEQEDEQH/xAAaAAEAAwEBAQAAAAAAAAAAAAAAAQIDBAUH/8QALBABAAICAAUDAgUFAAAAAAAAAAECAxEEEjFBUSEycZGhEyJSYbEUIzNCgf/EABUBAQEAAAAAAAAAAAAAAAAAAAAB/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A+4gAAAAAAAAiZ13BIrzx5OevkFhEWiZ9JhIAAAAAAAAAAAAAAAAClrxHyre+/SOigLTaZ+PCoAAAJiZjogBpGTtZeJjswTW01BuIrMTHokAAAAAAAAAABlktv0jovedV/diAAACJmIjczqPIJGFuKpHtibfZEcVH6J+oOgUx5KXj8s7nvC4AAJrPLO20TtgvjtqdA1AAAAAAAABEzqJBled2VAAAETOomZ6Q4cuT8S2+3aHTxVtY4iO8uMABUTE6ncdXbhy/iV9fdHVwtuFtrLEdpRXYAAADes7hLPHPZoAAAAAAArf2yspk9sgyAAABz8X7K/LldvE158Xp2nbiUABBpg/y1+Wbbha82XfgHYAigAL4vdLVjj9zYAAAAAABW3SVgHOExqdAAADjz4ZrO6xM1/h2Im0R1mI+ZB5w7bUw268v/JRGLDHj6g5aUm86rDux0jHXlj6kTSI1E1j4lYAAAAF8XWWqmONVXAAAAAAAABnkjuzbzG40xtHLOgQplyRjruevaPK8zqJmekPPyXnJabSC2TNfJ1nUeIZgqGjQAajwmtppO6zqUAOvDxHPPLedW7T5bvNdvD358fr1j0RWqaxM2iOyGuOuo35BcAAAAAAAAABW1eaFgHHxO64rbcL18uOuWvLbo87Nw98XrPrXzCjEOwIAAAAN+En+5MeYZY6WyW1SJl38NwsYvzWndv4BpSneerUEUAAAAAAAAAAAAABhl4XFkneuW3mGF+Bt/peJ+YdwDzP6TN4ifiSOEzfp+70wHnV4LJPWax92+Pgsce+Zs6gEVrFY1WIiP2SAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP//Z" 
+                  width="30" height="30" class="rounded-circle" />
+                </a>
+                <ul
+                  class="bg-focus dropdown-menu dropdown-menu-end background-color w-25"
+                  aria-labelledby="navbarDropdownMenuLink"
+                >
+                  <li>
+                    <a class="bg-focus dropdown-item text-light" href="#">
+                      change info
+                    </a>
+                  </li>
+                  <li>
+                    <a class="bg-focus dropdown-item text-light" href="#">
+                        change password
+                      </a>
+                  </li>
+                  <li>
+                    <a class="bg-focus dropdown-item text-light" href="#" onClick={handleLogout2}>
+                      logout
+                    </a> 
+                    <LogoutLink />
+                  </li>
+                </ul>
+              </li>
             </ul>
             </div>
         </div>
         </nav>
         <div class="form d-flex align-items-center justify-content-center background-color">
-          <form onSubmit={onSubmit} class="col-lg-6">
+          <form onSubmit={onSubmit} class="col-lg-4 col-md-6 col-10">
             <h1 class="h3 mb-3 fw-normal text-light text-center">Login Page</h1>
             <div class="form-floating pb-1">
             <input
@@ -75,8 +111,25 @@
             />
             <label htmlFor="new_password">Password</label>
             </div>
-            <button class="w-100 btn btn-lg btn-primary" type="submit">
+            <p class="text-end">
+                <a href="#" class="text-light">Forgot Password</a>
+            </p>
+            <button class="w-100 btn btn-lg btn-primary m-0" type="submit">
               Login here
+            </button>
+            <p class="text-center text-light mt-4 mb-2">
+                Not a Member?<a href="" class="p-1 text-decoration-none">Register</a>
+            </p>   
+            <p class="or text-muted text-center m-1">
+                <span>or</span>
+            </p>
+            <button class="btn btn-danger w-100  p-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-google" viewBox="0 0 16 16">
+                    <path d="M15.545 6.558a9.4 9.4 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.7 7.7 0 0 1 5.352 2.082l-2.284 2.284A4.35 4.35 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.8 4.8 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.7 3.7 0 0 0 1.599-2.431H8v-3.08z"/>
+                        <span class="ms-2">signin with Google</span>
+                </svg>
+                  <!-- <i class="bi bi-google text-light"></i> -->
+                  
             </button>
             <p class="mt-3 mb-3 text-muted">©CloudTech</p>
         </form>
