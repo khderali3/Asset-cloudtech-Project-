@@ -104,4 +104,7 @@ li.prof{
 a.bg-focus:hover{
     background-color: var(--main-font-color);
 }
+.form-control:focus{
+    box-shadow: none;
+}
 /*End Register page*/
