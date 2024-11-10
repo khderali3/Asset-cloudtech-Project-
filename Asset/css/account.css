@@ -107,4 +107,7 @@ a.bg-focus:hover{
 .form-control:focus{
     box-shadow: none;
 }
+.det{
+    pointer-events: none;
+}
 /*End Register page*/
