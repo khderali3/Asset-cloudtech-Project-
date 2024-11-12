@@ -4,12 +4,6 @@
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
- img {
-    max-width: 300px;
-    max-height: 200px;
-    height: auto;
-
-}
 /* end Global Values */
 /* Start Variables */
 :root{
