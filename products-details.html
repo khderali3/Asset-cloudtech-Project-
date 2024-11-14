@@ -5,8 +5,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Ticket_System</title>
+    <title>Bondi BootsV1</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -79,19 +78,21 @@
                   class="rounded-circle" />
               </a>
               <ul
-                class="dropdown-menu dropdown-menu-end background-color w-25"
+                class="bg-focus dropdown-menu dropdown-menu-end background-color w-25"
                 aria-labelledby="navbarDropdownMenuLink">
                 <li>
-                  <a class="dropdown-item text-light" href="#"> change info </a>
+                  <a class="bg-focus dropdown-item text-light" href="#">
+                    change info
+                  </a>
                 </li>
                 <li>
-                  <a class="dropdown-item text-light" href="#">
+                  <a class="bg-focus dropdown-item text-light" href="#">
                     change password
                   </a>
                 </li>
                 <li>
                   <a
-                    class="dropdown-item text-light"
+                    class="bg-focus dropdown-item text-light"
                     href="#"
                     onClick="{handleLogout2}">
                     logout
@@ -104,107 +105,41 @@
         </div>
       </div>
     </nav>
-    <div class="container mt-5">
-      <h1 class="mb-4">My Requests</h1>
-      <hr />
-      <form class="row d-flex justify-content-start">
-        <div class="col-lg-6 col-12">
-          <div class="col-lg-8 mt-3">
-            <label for="inlineFormSelectPref" class="ms-2"
-              >What are you looking for?</label
-            >
-            <input
-              type="search"
-              class="form-control rounded-pill col-12"
-              id="inlineFormInputGroupUsername"
-              placeholder="Search" />
-          </div>
-        </div>
-
-        <div class="col-lg-6 col-12">
-          <div class="col-lg-8 pt-3 ms-auto">
-            <label for="inlineFormSelectPref" class="ms-2">Ticket Status</label>
-            <select
-              class="form-select rounded-pill"
-              id="inlineFormSelectPref">
-              <option selected>Choose...</option>
-              <option value="1">One</option>
-              <option value="2">Two</option>
-              <option value="3">Three</option>
-            </select>
-          </div>
-        </div>
-        <div class="col-lg-6 col-12 d-flex justify-content-center ms-lg-2">
-          <div class="col-lg-12 col-md-3 col-5 mt-3">
-            <button
-              type="submit"
-              class="btn btn-primary col-lg-3 col-md-12 col-12">
-              Search
-            </button>
-          </div>
-        </div>
-      </form>
-      <hr />
-      <table class="table mt-5 table-striped table-responive d-md-table d-none">
-        <thead>
-          <tr>
-            <th scope="col">Subject</th>
-            <th scope="col">ID</th>
-            <th scope="col">Created</th>
-            <th scope="col">Latest activity</th>
-            <th scope="col">Status</th>
-            <th scope="col">Actions</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Passage Experience</td>
-            <td>#224</td>
-            <td>11-min ago</td>
-            <td>0 minutes</td>
-            <td><span class="badge bg-success">Completed</span></td>
-            <td>re-open</td>
-          </tr>
-          <tr>
-            <td>Issue with my network</td>
-            <td>#225</td>
-            <td>15-min ago</td>
-            <td>11 minutes</td>
-            <td><span class="badge bg-warning text-dark">Pending</span></td>
-            <td>closed</td>
-          </tr>
-        </tbody>
-      </table>
-      <div class="">
-        <div class="card mb-3 mt-3 d-md-none d-block">
-            <div class="card-body">
-              <p><strong>Subject:</strong> Passage Experience</p>
-              <p><strong>ID:</strong> #224</p>
-              <p><strong>Created:</strong> 11-min ago</p>
-              <p><strong>Latest activity:</strong> 0 minutes</p>
-              <p>
-                <strong>Status:</strong>
-                <span class="badge bg-success">Completed</span>
-              </p>
-              <p><strong>Actions:</strong> re-open</p>
+    <div class="products-info">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col">
+            <div class="product-desc w-100">
+              <img
+                src="Asset/Images/services.png"
+                alt=""
+                class="col-12"
+                height="300px" />
+              <div class="text mt-5 mb-5 text-start">
+                <h2 class="text-light text-bolder col-12 fs-1 mb-3">
+                  Microwave Links Equipment (From A to Z)
+                </h2>
+                <p class="fs-6 text-light col-lg-7 col-12">
+                  Lorem ipsum dolor sit amet consectetur. Diam mattis odio
+                  ornare facilisi Eu etiam suspendisse habitasse venenatis mi
+                  eleifend scelerisque Lorem ipsum dolor, sit amet consectetur
+                  adipisicing elit. Ipsum consequatur officiis tempora et
+                  nesciunt impedit numquam quos voluptatibus repellendus dolorum
+                  natus, excepturi maxime ullam nemo dicta nisi obcaecati. Sint,
+                  odit.
+                </p>
+                <p class="fs-6 text-light col-lg-7 col-12">
+                  Lorem ipsum dolor sit amet consectetur. Diam mattis odio
+                  ornare facilisi Eu etiam suspendisse habitasse venenatis mi
+                  eleifend scelerisque
+                </p>
+              </div>
             </div>
           </div>
-          <div class="card mb-3 mt-3 d-md-none d-block">
-            <div class="card-body">
-              <p><strong>Subject:</strong> Issue with my network</p>
-              <p><strong>ID:</strong> #225</p>
-              <p><strong>Created:</strong> 15-min ago</p>
-              <p><strong>Latest activity:</strong> 11 minutes</p>
-              <p>
-                <strong>Status:</strong>
-                <span class="badge bg-warning text-dark">Pending</span>
-              </p>
-              <p><strong>Actions:</strong> closed</p>
-            </div>
-          </div>
+        </div>
       </div>
     </div>
-    <script src="Asset/js/bootstrap.bundle.min.js"></script>
     <script src="Asset/js/all.min.js"></script>
+    <script src="Asset/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

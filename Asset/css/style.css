@@ -87,9 +87,11 @@ button.btn.btn-primary{
 }
 .landing .container .text-center{
     flex-basis: 50%;
+    position: relative;
+    z-index: 9;
 }
 .landing .cube{
-    flex-basis: 45%;
+    flex-basis: 30%;
     position: relative;
     z-index: 1;
 }
@@ -167,6 +169,9 @@ button.btn.btn-primary{
 }
 .section-3 .container-fluid .text {
     flex-basis: 45%;
+    padding-top: 100px;
+    position: relative;
+    z-index: 7;
 }
 @media (min-width: 767px) and (max-width: 991px){
     .section-3{
@@ -210,6 +215,9 @@ button.btn.btn-primary{
 @media (max-width: 767px){
     .section-3 .container-fluid .img::before{
         max-width: 70%;
+    }
+    .section-3{
+        padding-top: 120px;
     }
 }
 @media (max-width: 991px) {
@@ -291,11 +299,13 @@ button.btn.btn-primary{
 }
 .pack .container-fluid{
     width: 100%;
-    min-height: calc(100vh - 500px);
+    min-height: 60vh;
     background: var(--radia-gradient);
 }
 .pack .container-fluid .ft{
-    min-height: calc(100vh - 500px);
+    min-height: 60vh;
+    position: relative;
+    z-index: 5;
 }
 .pack .container-fluid .ft h2{
     color: var(--main-font-color);
@@ -310,6 +320,8 @@ button.btn.btn-primary{
     color: var(--secondary-text-color);
     flex-basis: 40%;
     padding: 20px;
+    position: relative;
+    z-index: 6;
 }
 .pack .container-fluid .text-11 h3{
     font-weight: 600;
@@ -324,32 +336,19 @@ button.btn.btn-primary{
 .pack .container-fluid .text-11 ul li{
     margin-bottom: 7px;
 }
-@media (min-width: 1379px) {
-    .pack{
-        min-height: calc(100vh - 900px);
-    }
-    .pack .container-fluid{
-        min-height: calc(100vh - 900px);
-    }
-    .pack .container-fluid .ft{
-        min-height: calc(100vh - 900px);
-    }
-    .pack .serv{
-        min-height: calc(100vh - 900px);
-    }
-}
 /* End Services Section */
 /* Start Visi Section*/
 .visi{
-    min-height: calc(100vh - 300px);
-}
-.visi .container-fluid{
-    min-height: calc(100vh - 300px);
+    min-height: 50vh;
+    padding: 60px;
     background-color: var(--primary-color);
 }
+.visi .container-fluid{
+    min-height: 50vh;
+    
+}
 .visi .container-fluid .text{
-    min-height: calc(100vh - 300px);
-    padding: 60px;
+    min-height: 50vh;
 }
 .visi .container-fluid .text h3{
     color: var(--main-font-color);
@@ -362,34 +361,15 @@ button.btn.btn-primary{
     text-align: center;
     max-width: 50%;
 }
-@media (max-width: 560px) {
+@media (max-width: 991px) {
     .visi .container-fluid .text p{
         max-width: 100%;
-    }
-}
-@media (min-width: 1379px) {
-    .visi{
-        min-height: calc(100vh - 900px);
-    }
-    .visi .container-fluid{
-        min-height: calc(100vh - 900px);
-    }
-    .visi .container-fluid .text{
-        min-height: calc(100vh - 900px);
     }
 }
 /* End Visi Section*/
 /* Start foc Section */
 .pack{
     min-height: 50vh;
-}
-@media (min-width: 360px) and (max-width: 991px){
-    .pack{
-        min-height: 60vh;
-    }
-    .pack .serv{
-        min-height: 97vh;
-    }
 }
 .pack .container-fluid{
     width: 100%;
@@ -399,8 +379,10 @@ button.btn.btn-primary{
     padding-bottom: 10px;
 }
 .pack .container-fluid .fts{
-    flex-basis: 40%;
+    flex-basis: 60%;
     padding: 60px;
+    position: relative;
+    z-index: 2;
 }
 .pack .container-fluid .ft h2{
     color: var(--main-font-color);
@@ -468,10 +450,14 @@ button.btn.btn-primary{
 .touch .container-fluid h3{
     color: var(--secondary-text-color);
     max-width: 50%;
+    position: relative;
+    z-index: 3;
 }
 
 .touch .container-fluid .but{
     max-width: 70%;
+    position: relative;
+    z-index: 4;
 }
 .touch .container-fluid .but button{
     border: none;
@@ -480,12 +466,15 @@ button.btn.btn-primary{
 /* End touch Section*/
 /* Start Footer Section */
 .footer{
-    min-height: 60vh;
+    height: 80vh;
     width: 100%;
     position: relative;
     background: var(--main-background-color);
     padding-top: 60px;
     padding-bottom: 60px;
+}
+.footer .container-fluid{
+    height: 80vh;
 }
 .footer::before{
     content: "";
@@ -500,23 +489,12 @@ button.btn.btn-primary{
     background-repeat: no-repeat;
     opacity: 0.2;
 }
-@media (min-width: 1199px) {
-    .footer{
-        min-height: calc(100vh - 500px);
-        padding-top: 60px;
-        padding-bottom: 60px;
-    }
-    .foot-back{
-        min-height: 40%;
-        width: 100%;
-    }
-}
 .footer .foot-back .container-fluid{
-    min-height: 100%;
+    min-height: 80vh;
     max-width: 100%;
 }
 .intro{
-    height: 100%;
+    height: 80vh;
     width: 100%;
     flex-basis: 30%;
 }
@@ -539,7 +517,7 @@ button.btn.btn-primary{
 .contac p span{
     font-weight: bold;
 }
-.contac .form label{
+.contac .foot-contac label{
     font-size: 18px;
     font-weight: 700;
     letter-spacing: 2px;
@@ -555,84 +533,15 @@ button.btn.btn-primary{
     color: var(--secondary-text-color);
 }
 /* End Footer Section */
-/* Start Global Values*/
-*{
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-}
- img {
-    max-width: 300px;
-    max-height: 200px;
-    height: auto;
-
-}
-/* end Global Values */
-/* Start Variables */
-:root{
-    --main-background-color: linear-gradient(171.18deg, #0F223C 10.6%, #101925 88.52%);
-    --background-image: url(../Images/pattern.png);
-    --primary-color: #101925;
-    --primary-2-color: #0f223c;
-    --main-font-color: #58B3C8;
-    --secondary-text-color: #E6E6E7;
-    --radia-gradient: radial-gradient(310.49% 310.49% at 308.16% 126.24%, #58B3C8 0%, #101925 100%);
-
-}
-/* End Variables */
-/* Start Component */
-    .background-color{
-        background: var(--main-background-color);
-        background-size: cover;
-        background-position: center;
-    }
-    .background-image{
-        background-image: var(--background-image);
-        background-size: cover;
-        background-position: center;
-        opacity: 0.1;
-        position: absolute;
-        z-index: 1;
-    }
-/* End Component */
-body{
-    font-family: "Poppins", sans-serif;
-    height: 100%;
-    width: 100%;
-    background-size: cover;
-}
-/*Start Register page*/
-
-.navbar .navbar-toggler{ 
-    color: var(--main-font-color);
-    font-size: 30px;
-}
-.navbar .container-fluid .navbar-brand img{
-    max-width: 195px ;
-}
-.navbar-nav .nav-link{
-    color: var(--secondary-text-color);
-    transition: 0.3s;
-    height: 55px;
-}
-.navbar-nav .nav-link:hover{
-    color: var(--main-font-color);
-    border-bottom: 1px solid var(--main-font-color);
-}
-button.btn.btn-primary{
-    background-color: var(--main-font-color);
-    border: none;
-}
-.navbar .Eng{
-    color: var(--secondary-text-color);
-}
+/* Start Register */
 .form{
-    min-height: calc(100vh - 71px);
+    min-height: 92vh;
+    /* Register page*/
 }
 .or{
     position: relative;
 }
-form .or::before{
+.form .or::before{
     content: "";
     position: absolute;
     height: 1px;
@@ -642,7 +551,7 @@ form .or::before{
     transform: translateY(-50%);
     left: 43%;
 }
-form .or::after{
+.form .or::after{
     content: "";
     position: absolute;
     height: 1px;
@@ -666,3 +575,21 @@ a.bg-focus:hover{
     box-shadow: none;
 }
 /*End Register page*/
+
+/*
+Start Products-info section 
+ */
+.products-info{
+    min-height: 92vh;
+    background: var(--main-background-color);
+}
+.products-info .container .text h2{
+    font-weight: bolder;
+    letter-spacing: 2px;
+}
+.products-info .container .text p{
+    letter-spacing: 1px;
+}
+/*
+End Products-info section 
+ */
