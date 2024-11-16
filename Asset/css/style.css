@@ -45,7 +45,7 @@ body{
 }
 .navbar-nav .nav-link{
     color: var(--secondary-text-color);
-    transition: 0.3s;
+    transition: 0.1s;
     height: 55px;
 }
 .navbar-nav .nav-link:hover{
@@ -79,7 +79,7 @@ button.btn.btn-primary{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    opacity: 0.2;
+    opacity: 0.1;
 }
 .landing .container{
     width: 100%;
@@ -91,7 +91,7 @@ button.btn.btn-primary{
     z-index: 9;
 }
 .landing .cube{
-    flex-basis: 30%;
+    flex-basis: 50%;
     position: relative;
     z-index: 1;
 }
@@ -144,7 +144,7 @@ button.btn.btn-primary{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    opacity: 0.2;
+    opacity: 0.1;
 }
 .section-3 .container-fluid{
     min-height: 30vh;
@@ -278,13 +278,13 @@ button.btn.btn-primary{
 }
 /* End Products section */
 /* Start Services Section*/
-.pack{
+.services{
     width: 100%;
     position: relative;
     min-height: 30vh;
     background: var(--main-background-color);
 }
-.pack::before{
+.services::before{
     content: "";
     position: absolute;
     top: 0;
@@ -295,60 +295,40 @@ button.btn.btn-primary{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    opacity: 0.2;
+    opacity: 0.1;
 }
-.pack .container-fluid{
+.services .container{
     width: 100%;
-    min-height: 60vh;
-    background: var(--radia-gradient);
+    min-height: 40vh;
 }
-.pack .container-fluid .ft{
-    min-height: 60vh;
+.services .container .row .text{
     position: relative;
     z-index: 5;
 }
-.pack .container-fluid .ft h2{
+.services .container .row .text h2{
     color: var(--main-font-color);
-    font-weight: 900;
-    font-size: 26px;
+    font-weight: 700;
 }
-.pack .container-fluid .ft p{
-    color: var(--secondary-text-color);
+.services .container .row .text p{
     font-size: 36px;
 }
-.pack .container-fluid .text-11{
-    color: var(--secondary-text-color);
-    flex-basis: 40%;
-    padding: 20px;
+.services .container .row .tog1{
     position: relative;
     z-index: 6;
-}
-.pack .container-fluid .text-11 h3{
-    font-weight: 600;
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-.pack .container-fluid .text-11 ul{
-    display: inline;
-    float: left;
-    padding: 10px;
-}
-.pack .container-fluid .text-11 ul li{
-    margin-bottom: 7px;
 }
 /* End Services Section */
 /* Start Visi Section*/
 .visi{
-    min-height: 50vh;
+    min-height: 30vh;
     padding: 60px;
     background-color: var(--primary-color);
 }
 .visi .container-fluid{
-    min-height: 50vh;
+    min-height: 30vh;
     
 }
 .visi .container-fluid .text{
-    min-height: 50vh;
+    min-height: 30vh;
 }
 .visi .container-fluid .text h3{
     color: var(--main-font-color);
@@ -369,12 +349,28 @@ button.btn.btn-primary{
 /* End Visi Section*/
 /* Start foc Section */
 .pack{
+    width: 100%;
     min-height: 50vh;
+    background: var(--radia-gradient);
+    position: relative;
+}
+.pack::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../Images/pattern.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.1;
 }
 .pack .container-fluid{
     width: 100%;
     min-height: 50vh;
-    background: var(--radia-gradient);
+   
     padding-top: 10px;
     padding-bottom: 10px;
 }
@@ -395,7 +391,12 @@ button.btn.btn-primary{
     max-width: 100%;
 }
 .pack .container-fluid img{
-    max-width: 350px;
+    max-width: 35%;
+}
+@media (max-width: 991px) {
+    .pack .container-fluid img{
+        max-width: 90%;
+    }
 }
 /*  End foc Section */
 /* Start some of our clients section */
@@ -424,14 +425,14 @@ button.btn.btn-primary{
     height: 30%;
 }
 /* End some of our clients section */
-/* Start touch Section*/
-.touch{
-    min-height: 50vh;
+/* Start touch   Section*/
+.parent{
     width: 100%;
     position: relative;
-    background: var(--main-background-color);
+    min-height: 30vh;
+    background: var(--main-background-color)
 }
-.touch::before{
+.parent::before{
     content: "";
     position: absolute;
     top: 0;
@@ -442,24 +443,17 @@ button.btn.btn-primary{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    opacity: 0.2;
+    opacity: 0.1;
 }
-.touch .container-fluid{
-    min-height: 50vh;
+.parent .container{
+    width: 100%;
+    min-height: 30vh;
 }
-.touch .container-fluid h3{
-    color: var(--secondary-text-color);
-    max-width: 50%;
+.parent .container .but{
     position: relative;
-    z-index: 3;
+    z-index: 10;
 }
-
-.touch .container-fluid .but{
-    max-width: 70%;
-    position: relative;
-    z-index: 4;
-}
-.touch .container-fluid .but button{
+.parent .container .but button{
     border: none;
     background-color: var(--main-font-color);
 }
@@ -487,7 +481,7 @@ button.btn.btn-primary{
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    opacity: 0.2;
+    opacity: 0.1;
 }
 .footer .foot-back .container-fluid{
     min-height: 80vh;
@@ -502,7 +496,7 @@ button.btn.btn-primary{
     list-style-type: none;
     min-height: 100%;
     font-weight: 700;
-    transition: 0.3s;
+    transition: 0.1s;
 }
 .intro ul li.active{
     color: var(--main-font-color);
@@ -579,6 +573,7 @@ a.bg-focus:hover{
 /*
 Start Products-info section 
  */
+
 .products-info{
     min-height: 92vh;
     background: var(--main-background-color);
@@ -590,6 +585,9 @@ Start Products-info section
 .products-info .container .text p{
     letter-spacing: 1px;
 }
-/*
-End Products-info section 
- */
+ .image_product_dait {
+     object-fit: contain;  /*Ensures the image is fully visible, without cropping */
+    border-radius: 10px;  /* Optional for rounded corners */
+    height: 50vh;
+    width: 60vw;
+  }

@@ -15,11 +15,8 @@
     <link rel="stylesheet" href="Asset/css/bootstrap.min.css" />
     <link rel="stylesheet" href="Asset/css/all.min.css" />
     <link rel="stylesheet" href="Asset/css/style.css" />
-    <style>
-      .toggle-content {
-        display: none;
-      }
-    </style>
+  
+
   </head>
   <body>
     <nav class="navbar navbar-expand-lg background-color sticky-top">
@@ -112,19 +109,25 @@
     <!-- Ticket section -->
     <div class="container mt-5">
       <div class="ticket-text col-lg-9 col-11 border-bottom border-2">
-        <h3>Passage Experiene</h3>
+        <h3>Ticket Subject Name </h3>
       </div>
       <div class="row d-flex justify-content-between">
         <div class="col-lg-3 col-md-10 d-lg-none d-block ms-auto me-auto mb-4">
-          <div class="dropdown">
+          <div class="dropdown ">
             <div class="container mt-5">
               <button
-                class="d-block d-md-none border-0 ms-auto border-bottom"
-                id="toggleButton">
-                <i class="fa-solid fa-caret-down fs-3"></i>
+                class="d-block d-md-none border-0 ms-auto border-bottom collapse  "
+                id="toggleButton"
+                
+                data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"
+                
+                >
+                
+                <i class="fa-solid fa-caret-down fs-3"></i>  Ticket Details 
               </button>
               <hr class="d-block" />
-              <div class="card toggle-content mt-3 d-md-block" id="toggleCard">
+
+              <div   id="collapseExample" class="card collapse  toggle-content mt-3 d-md-block" id="toggleCard">
                 <div class="card-body">
                   <div
                     class="d-flex justify-content-between position-relative p-1">
@@ -223,41 +226,41 @@
             </div>
           </div>
         </div>
-        <div class="col-lg-8">
-          <div class="ticket-prof mt-3 mb-3">
-            <img
-              src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAJQAswMBIgACEQEDEQH/xAAaAAEAAwEBAQAAAAAAAAAAAAAAAQIDBAUH/8QALBABAAICAAUDAgUFAAAAAAAAAAECAxEEEjFBUSEycZGhEyJSYbEUIzNCgf/EABUBAQEAAAAAAAAAAAAAAAAAAAAB/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A+4gAAAAAAAAiZ13BIrzx5OevkFhEWiZ9JhIAAAAAAAAAAAAAAAAClrxHyre+/SOigLTaZ+PCoAAAJiZjogBpGTtZeJjswTW01BuIrMTHokAAAAAAAAAABlktv0jovedV/diAAACJmIjczqPIJGFuKpHtibfZEcVH6J+oOgUx5KXj8s7nvC4AAJrPLO20TtgvjtqdA1AAAAAAAABEzqJBled2VAAAETOomZ6Q4cuT8S2+3aHTxVtY4iO8uMABUTE6ncdXbhy/iV9fdHVwtuFtrLEdpRXYAAADes7hLPHPZoAAAAAAArf2yspk9sgyAAABz8X7K/LldvE158Xp2nbiUABBpg/y1+Wbbha82XfgHYAigAL4vdLVjj9zYAAAAAABW3SVgHOExqdAAADjz4ZrO6xM1/h2Im0R1mI+ZB5w7bUw268v/JRGLDHj6g5aUm86rDux0jHXlj6kTSI1E1j4lYAAAAF8XWWqmONVXAAAAAAAABnkjuzbzG40xtHLOgQplyRjruevaPK8zqJmekPPyXnJabSC2TNfJ1nUeIZgqGjQAajwmtppO6zqUAOvDxHPPLedW7T5bvNdvD358fr1j0RWqaxM2iOyGuOuo35BcAAAAAAAAABW1eaFgHHxO64rbcL18uOuWvLbo87Nw98XrPrXzCjEOwIAAAAN+En+5MeYZY6WyW1SJl38NwsYvzWndv4BpSneerUEUAAAAAAAAAAAAABhl4XFkneuW3mGF+Bt/peJ+YdwDzP6TN4ifiSOEzfp+70wHnV4LJPWax92+Pgsce+Zs6gEVrFY1WIiP2SAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP//Z"
-              width="60"
-              class="m-0 p-0" />
-            <div
-              class="profile-text d-inline-flex flex-column align-items-center">
-              <h4 class="d-inline m-0 fs-5">John Doe</h4>
-              <p class="text-muted d-inline">Web Developer</p>
-            </div>
-            <div class="ticket-details-text">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde,
-              alias rem? Distinctio aliquam nisi nobis? Beatae vitae pariatur
-              dolore dolores dicta unde nostrum aliquid. Soluta dicta repellat
-              dolores explicabo molestias. Lorem ipsum, dolor sit amet
-              consectetur adipisicing elit. Unde, alias rem? Distinctio aliquam
-              nisi nobis? Beatae vitae pariatur dolore dolores dicta unde
-              nostrum aliquid. Soluta dicta repellat dolores explicabo
-              molestias. Lorem ipsum, dolor sit amet consectetur adipisicing
-              elit. Unde, alias rem? Distinctio aliquam nisi nobis? Beatae vitae
-              pariatur dolore dolores dicta unde nostrum aliquid. Soluta dicta
-              repellat dolores explicabo molestias. Lorem ipsum, dolor sit amet
-              consectetur adipisicing elit. Unde, alias rem? Distinctio aliquam
-              nisi nobis? Beatae vitae pariatur dolore dolores dicta unde
-              nostrum aliquid. Soluta dicta repellat dolores explicabo
-              molestias.
-            </div>
-            <div class="text-field">
-              <form action="">
-                <textarea name="" id="" class="col-11"> </textarea>
-              </form>
-            </div>
-            <hr />
+
+        <div class="col-lg-8 ">
+            <div class="ticket-prof mt-3 mb-5 ">
+                <img
+                  src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAJQAswMBIgACEQEDEQH/xAAaAAEAAwEBAQAAAAAAAAAAAAAAAQIDBAUH/8QALBABAAICAAUDAgUFAAAAAAAAAAECAxEEEjFBUSEycZGhEyJSYbEUIzNCgf/EABUBAQEAAAAAAAAAAAAAAAAAAAAB/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8A+4gAAAAAAAAiZ13BIrzx5OevkFhEWiZ9JhIAAAAAAAAAAAAAAAAClrxHyre+/SOigLTaZ+PCoAAAJiZjogBpGTtZeJjswTW01BuIrMTHokAAAAAAAAAABlktv0jovedV/diAAACJmIjczqPIJGFuKpHtibfZEcVH6J+oOgUx5KXj8s7nvC4AAJrPLO20TtgvjtqdA1AAAAAAAABEzqJBled2VAAAETOomZ6Q4cuT8S2+3aHTxVtY4iO8uMABUTE6ncdXbhy/iV9fdHVwtuFtrLEdpRXYAAADes7hLPHPZoAAAAAAArf2yspk9sgyAAABz8X7K/LldvE158Xp2nbiUABBpg/y1+Wbbha82XfgHYAigAL4vdLVjj9zYAAAAAABW3SVgHOExqdAAADjz4ZrO6xM1/h2Im0R1mI+ZB5w7bUw268v/JRGLDHj6g5aUm86rDux0jHXlj6kTSI1E1j4lYAAAAF8XWWqmONVXAAAAAAAABnkjuzbzG40xtHLOgQplyRjruevaPK8zqJmekPPyXnJabSC2TNfJ1nUeIZgqGjQAajwmtppO6zqUAOvDxHPPLedW7T5bvNdvD358fr1j0RWqaxM2iOyGuOuo35BcAAAAAAAAABW1eaFgHHxO64rbcL18uOuWvLbo87Nw98XrPrXzCjEOwIAAAAN+En+5MeYZY6WyW1SJl38NwsYvzWndv4BpSneerUEUAAAAAAAAAAAAABhl4XFkneuW3mGF+Bt/peJ+YdwDzP6TN4ifiSOEzfp+70wHnV4LJPWax92+Pgsce+Zs6gEVrFY1WIiP2SAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP//Z"
+                  width="60"
+                  class="m-0 p-0" />
+                <div
+                  class="profile-text d-inline-flex flex-column align-items-center">
+                  <h4 class="d-inline m-0 fs-5">John Doe</h4>
+                  <p class="text-muted d-inline">Web Developer</p>
+                </div>
+                <div class="ticket-details-text">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde,
+                  alias rem? Distinctio aliquam nisi nobis? Beatae vitae pariatur
+                  dolore dolores dicta unde nostrum aliquid. Soluta dicta repellat
+                  dolores explicabo molestias. Lorem ipsum, dolor sit amet
+                  consectetur adipisicing elit. Unde, alias rem? Distinctio aliquam
+                  nisi nobis? Beatae vitae pariatur dolore dolores dicta unde
+                  nostrum aliquid. Soluta dicta repellat dolores explicabo
+                  molestias. Lorem ipsum, dolor sit amet consectetur adipisicing
+                  elit. Unde, alias rem? Distinctio aliquam nisi nobis? Beatae vitae
+                  pariatur dolore dolores dicta unde nostrum aliquid. Soluta dicta
+                  repellat dolores explicabo molestias. Lorem ipsum, dolor sit amet
+                  consectetur adipisicing elit. Unde, alias rem? Distinctio aliquam
+                  nisi nobis? Beatae vitae pariatur dolore dolores dicta unde
+                  nostrum aliquid. Soluta dicta repellat dolores explicabo
+                  molestias.
+                </div>
+
+                <hr />
           </div>
+
+
+
           <div class="ticket-prof mt-3 mb-3">
             <img
               src="Asset/Images/pexels-moh-adbelghaffar-771742.jpg"
@@ -278,6 +281,45 @@
             </div>
             <hr />
           </div>
+
+
+
+          <div>
+
+
+            <form>
+
+
+
+              <div class="form-group">
+                <label for="exampleFormControlTextarea1">Example textarea</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
+              </div>
+
+              <div class="form-group">
+                <label for="exampleFormControlFile1">Example file input</label>
+                <input type="file" class="form-control-file" id="exampleFormControlFile1">
+              </div>
+
+
+              <button type="submit" class="btn btn-primary mt-3 mb-5">Submit</button>
+
+
+
+            </form>
+
+
+
+
+
+
+          </div>
+
+
+
+
+
+
         </div>
         <div class="col-lg-3 d-lg-block d-none">
           <div class="card">
@@ -371,10 +413,22 @@
             </div>
           </div>
         </div>
+
+
+
+
+ 
+
+
+
+
+
+
+
       </div>
     </div>
     <!-- End Ticket section -->
-    <script>
+    <!-- <script>
       document
         .getElementById("toggleButton")
         .addEventListener("click", function () {
@@ -385,7 +439,7 @@
             toggleCard.style.display = "none";
           }
         });
-    </script>
+    </script> -->
     <script src="Asset/js/all.min.js"></script>
     <script src="Asset/js/bootstrap.bundle.min.js"></script>
   </body>
